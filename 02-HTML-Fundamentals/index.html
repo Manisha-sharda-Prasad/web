@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="index.css" />
   </head>
 
-  <body>
+  <body id="body">
     <!-- 
       <title>  :: title TAG :: it will update chrome-tab title
       title="" :: title ATTRIBUTE :: ii will add TOOLTIP to ANY html tag.
@@ -125,7 +125,10 @@
       ARTICLE 2 :: in progress
       <iframe src="blogs.html" title="YOUTUBE::MANISHA"></iframe>
       <iframe src="https://www.youtube.com/embed/S0o9Navc9ns"></iframe>
-      </iframe>
+      <iframe
+        src="https://www.youtube.com/embed/ok-plXXHlWw"
+        frameborder="5"
+      ></iframe>
     </article>
     <hr />
 
@@ -143,4 +146,18 @@
       >
     </footer>
   </body>
+
+  <script>
+    let btn = document.querySelector("#body");
+    btn.addEventListener("mousemove", (event) => {
+      console.log(event);
+      console.log(
+        "mouse coordinate chnaged:(",
+        event.screenX,
+        ",",
+        event.screenY,
+        ")"
+      );
+    });
+  </script>
 </html>
